@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi!\n\nThis program is for exporting the raw data from your sleeps recorded with the Zeo Mobile. You need root to be able to access the database of the Zeo app.\n
+WARNING! This is a pre-alpha experimental dev. version! The developer is not responsible to any damage or dataloss caused by using this program!\n\n
+Enjoy!\nChris|cC" />
+
+    <Button android:id="@+id/exportBtn" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Export All!" />
+    
+    <ListView android:id="@android:id/list" 
+			  android:layout_width="fill_parent"
+			  android:background="#101010"
+			  android:layout_height="fill_parent"
+			  android:layout_below="@id/exportBtn" >
+	</ListView>
+</LinearLayout>
